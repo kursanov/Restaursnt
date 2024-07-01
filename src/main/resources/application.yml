@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Restaurant
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restaurant
+    username: postgres
+    password: 716202
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  error:
+    include-stacktrace: always
+
+app:
+  jwt:
+    secret: zarip
